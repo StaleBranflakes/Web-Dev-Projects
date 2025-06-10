@@ -10,23 +10,76 @@
 
     <form method = "post" action="http://www.google.com">
         <p>
-            <label for="">Color:>
+            <label for="">Color:
                 <input type="color" autofocus />
                 <!-- In hexadecimal format-->
-
-                 
-
             </label>
         </p>
         <p>
-            <label for="Date">
+            <label for="Date"> Date:
                 <input type="date">
                 <!-- (yyyy-mm-dd)-->
             </label>
         </p>
         <p>
-            <label for="Datetime">
+            <label for="Datetime"> Date time:
                 <input type="datetime-local">
+                <!--(yyyy-mm-ddThh:mm, with time as well)-->
+            </label>
+        </p>
+        <p>
+            <label for="email">Email: 
+                <input type="email" placeholder= "name@domain.com" required> (name@domain.com)
+
+            </label>
+        </p>
+        <p>
+            <label for="Month">Month:
+                <input type="month"> (yyyy-mm)
+            </label>
+        </p>
+
+        <p>
+            <label for="Number">
+                <input type="number"
+                min = "0"
+                max = "7"
+                step = "1"
+                value="">
+            </label> (Enter a number between 0 and 7)
+        </p>
+        <p>
+            <label for=:"Range">Range:
+                0 <input type="range"
+                min="0"
+                max="20"
+                value="4"> 20
+
+            </label>
+        </p>
+        <p>
+            <label for="Search">Search:
+                <input type="search" placeholder="search query"> (Enter your search query here)
+            </label>
+        </p>
+        <p>
+            <label for="tel">Tel:
+                <input type="tel" placeholder="(###) ###-####" pattern="\(\d{3}\) + \d{3}-\d{4}" required> (###) ###-####
+            </label>
+        </p>
+        <p>
+            <label for="time">Time:
+                <input type="time">
+            </label>
+        </p>
+        <p> 
+            <label for="url">URL:
+                <input type="url" placeholder="http://www.domainname.com"> (http://www.domainname.com)
+            </label>
+        </p>
+        <p>
+            <label for="week">Week:
+                <input type="week"> (yyyy-Wnn)
             </label>
         </p>
     </form>
