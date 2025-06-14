@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning elements</title>
+    <style type="text/css">
+        .background_image{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+
+        }
+        .foreground_image{
+            position: absolute;
+            top: 25px;
+            left: 100px;
+            z-index: 2;
+
+        }
+        .text{
+            position: absolute;
+            top: 250px;
+            left: 100px;
+            z-index: 3;
+            font-size: 20pt;
+            font-family: tahoma, geneva, sans-serif;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <p><img src="../images/space.jpeg" alt="space image" class="background_image"></p>
+    <p><img src="../images/super shenron.jpg" alt="super shenron" class="foreground_image" width="400"></p>
+    <p class="text">This is an image of <em>Super Shenron</em></p>
+</body>
+</html>

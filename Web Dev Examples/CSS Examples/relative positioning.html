@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative positioning example</title>
+    <style type="text/css">
+        p{font-size: 1.3em; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+        span{color: red; font-size: .6em;}
+        .super{position: relative; top: -1ex;}
+        .sub{position: relative; bottom: -1ex;}
+        .shiftleft{position: relative; left: -1ex;}
+        .shiftright{position: relative; right: -1ex;}
+
+
+    </style>
+</head>
+<body>
+    <p>The text at the end of this sentence <span class="super">
+
+    is in superscript</span> </p>
+
+    <p>the text at the end of this sentence <span class="sub">is in subscript</span></p>
+    
+    <p>The text at the end of this sentenece <span class="shiftleft">is shifted to the left</span></p>
+    
+    <p>the text at the the end of this sentence <span class="shiftright">is shifted to the right</span></p>
+</body>
+</html>
